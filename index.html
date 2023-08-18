@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
         <!-- shape container -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Triangle card -->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
                 <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Triangle</h2>
@@ -33,37 +33,52 @@
                     <input id="triangle-height" class=" ml-4 border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Height">
                     <span class="ml-2" id="">cm</span>
                   </p>
+                  <p class="text-xl font-medium">Area: <span id="triangle-area">0</span>cm<sup>2</sup></p>
                   <div class="card-actions">
                     <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
-            <!-- Rectangle card -->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <!-- rectangle card -->
+            <div class="card bg-base-100 shadow-xl">
                 <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rectangle</h2>
                   <p>Area (A) = w X l</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <p>
+                    <input id="rectangle-width" class="border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Width">
+                    <span class="ml-2" id="">cm</span>
+                    <input id="rectangle-length" class=" ml-4 border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Length">
+                    <span class="ml-2" id="">cm</span>
+                  </p>
+                  <p class="text-xl font-medium">Area: <span id="rectangle-area">0</span>cm<sup>2</sup></p>
+                  <div class="card-actions">
+                    <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
             <!-- parallelogram card -->
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
                 <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Parallelogram</h2>
+                  <h2 class="card-title">parallelogram</h2>
                   <p>Area (A) = b X h</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <p>
+                    <input id="parallelogram-base" class="border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Base">
+                    <span class="ml-2" id="">cm</span>
+                    <input id="parallelogram-height" class=" ml-4 border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Height">
+                    <span class="ml-2" id="">cm</span>
+                  </p>
+                  <p class="text-xl font-medium">Area: <span id="parallelogram-area">0</span>cm<sup>2</sup></p>
+                  <div class="card-actions">
+                    <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
         </div>
 
         <!-- Area Calculator -->
-        <div class="w-[400px]">
+        <div class="ml-4 w-[400px]">
           <div class="text-4xl">Area Calculator</div>
         </div>
 
