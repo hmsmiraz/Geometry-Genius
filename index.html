@@ -26,9 +26,15 @@
                 <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Triangle</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <p>Area (A) = 0.5 X b X h</p>
+                  <p>
+                    <input id="triangle-base" class="border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Base">
+                    <span class="ml-2" id="">cm</span>
+                    <input id="triangle-height" class=" ml-4 border w-24 px-2 text-xl bg-slate-100" type="text" name="" placeholder="Height">
+                    <span class="ml-2" id="">cm</span>
+                  </p>
+                  <div class="card-actions">
+                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -37,7 +43,7 @@
                 <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rectangle</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Area (A) = w X l</p>
                   <div class="card-actions justify-end">
                     <button class="btn btn-primary">Buy Now</button>
                   </div>
@@ -48,7 +54,7 @@
                 <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Parallelogram</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Area (A) = b X h</p>
                   <div class="card-actions justify-end">
                     <button class="btn btn-primary">Buy Now</button>
                   </div>
@@ -63,5 +69,6 @@
 
       </div>
     </main>
+    <script src="scripts/area-calculator.js"></script>
   </body>
 </html>
